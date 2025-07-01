@@ -1,0 +1,114 @@
+.jobs-large-card{
+     width: 90%;
+     padding: 15px;
+     background-color: rgb(39, 38, 38);
+     margin-bottom: 10px;
+     border-radius: 15px;
+     color: white;
+}
+.logo-title-cont{
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+}
+.card-logo{
+     width: 70px;
+}
+.rating-cont{
+     margin-left: 20px;
+     
+
+}
+.rating-icon{
+     color: gold;
+     margin-right: 10px;
+}
+.locat-salary-cont{
+     margin-top: 15px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.span-cont{
+     margin-left: 10px;
+     font-size: 15px;
+}
+.emp-icon{
+     margin-left: 20px;
+}
+.hr-line{
+     color: white;
+}
+.description-cont{
+     display: flex;
+     flex-direction: column;
+}
+.descrip-heading{
+     margin-bottom: 15px;
+}
+.all-jobs-link-cont:hover{
+     text-decoration: none;
+}
+.jobs-small-card{
+     display: none;
+}
+
+@media (max-width:768px) {
+     .jobs-large-card{
+          display: none;
+     }
+     .jobs-small-card{
+          display: block;
+          width: 100%;
+          padding: 10px;
+          background-color: rgb(39, 38, 38);
+          margin-bottom: 10px;
+          border-radius: 15px;
+          color: white;
+     }
+     .logo-title-cont{
+          display: flex;
+          justify-content: flex-start;
+          align-items: flex-start;
+     }
+     .card-logo{
+          width: 60px;
+     }
+     .rating-cont{
+          margin-left: 10px;
+     
+     }
+     .rating-icon{
+          color: gold;
+          margin-right: 10px;
+     }
+     .locat-salary-cont{
+          margin-top: 15px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+     }
+     
+     .span-cont{
+          margin-left: 5px;
+          font-size: 15px;
+     }
+     .emp-icon{
+          margin-left: 10px;
+     }
+     .hr-line{
+     color: white;
+     }
+     .description-cont{
+          display: flex;
+          flex-direction: column;
+     }
+     .descrip-heading{
+          margin-bottom: 15px;
+     }
+     
+     
+}

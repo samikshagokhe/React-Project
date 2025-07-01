@@ -1,0 +1,36 @@
+.skills-cont{
+     list-style: none;
+}
+.skills-image{
+     display: flex;
+     align-items: center;
+     width: 30px;
+     height: 30px;
+     margin-right: 10px;
+
+}
+.skill-name-heading{
+     margin-right: 30px;
+}
+
+@media (max-width:768px) {
+     .skills-cont{
+          list-style: none;
+          margin-bottom: 25px;
+          margin-right: 15px;
+          margin-left: 0;
+          margin-top: 0;
+     }
+     .skills-image{
+          /* display: flex; */
+          /* align-items: center; */
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+     
+     }
+     .skill-name-heading{
+          margin-right: 20px;
+     }
+     
+}
