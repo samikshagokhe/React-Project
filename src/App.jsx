@@ -1,10 +1,10 @@
 import Home from './components/home';
-import Login from './components/login';
+import Login from './Components/login';
 import Jobs from './components/jobs';
 import NotFound from './components/notFound';
 import {Route, Routes} from "react-router-dom";
 import ProtectedRoute from './components/protectedRoute';
-import DetailedJobsSection from './components/detailedJobsSection';
+import DetailedJobsSection from './Components/detailedJobsSection';
 import './App.css';
 const App = ()=>(
   <Routes>

@@ -65,12 +65,12 @@ const Login =()=>{
                <form onSubmit={onSubmitUserDetails} className='my-form'>
                     <div className="form-group">
                     <label htmlFor="exampleInputEmail1">Username</label>
-                    <input onChange={(e)=>{setValues({...allValues, userName : e.target.value})}} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+                    <input onChange={(e)=>{setValues({...allValues, userName : e.target.value})}} type="text" className="form-control" id="exampleInputEmail1" placeholder="rahul" aria-describedby="emailHelp" autoComplete="off"/>
                     <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div className="form-group">
                     <label htmlFor="exampleInputPassword1">Password</label>
-                    <input onChange={(e)=>{setValues({...allValues, password : e.target.value})}} type="password" className="form-control" id="exampleInputPassword1"/>
+                    <input onChange={(e)=>{setValues({...allValues, password : e.target.value})}} type="password" className="form-control" id="exampleInputPassword1" placeholder="rahul@2021"/>
                     </div>
                     <br />
                     <button type="submit" className="btn btn-primary form-control">Submit</button>

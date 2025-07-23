@@ -2,7 +2,7 @@
 import { useParams } from 'react-router-dom';
 import './index.css';
 import Cookies from 'js-cookie'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Header from '../header';
 import { BsBriefcaseFill } from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
@@ -23,6 +23,8 @@ const DetailedJobsSection =()=>{
           lifeAtCompDetails : {},
           similarJobsDetails : []
      })
+
+     useEffect(()=>{
 
      const getDetailedJobsData = async()=>{
           const api = `https://apis.ccbp.in/jobs/${id}`;
@@ -45,10 +47,11 @@ const DetailedJobsSection =()=>{
                similarJobsDetails : detailedJobsData.similar_jobs
           });
 
-
      }
 
      getDetailedJobsData();
+
+     },[]);
 
 
      return(
@@ -87,10 +90,13 @@ const DetailedJobsSection =()=>{
                <br />
                <h5 className="descrip-heading">Skills</h5>
                <ul className='skills-cont'>
-                    {allValues.skillsDetails.map( each=><SkillsDetails key={each.id} detailOfSkills={each}/>)}
+                    {allValues.skillsDetails.map( (each, index)=> <SkillsDetails key={index} detailOfSkills={each}/>)}
+                    
                </ul>
+
                <h5 className="descrip-heading">Life at Company</h5>
                <div className='life-cmpny-cont'>
+                    
                     <span className='comp-descrip-span'>{allValues.lifeAtCompDetails.description}</span>
                     <img className='company-image' src={allValues.lifeAtCompDetails.image_url} alt="company-image" />
 
@@ -100,7 +106,7 @@ const DetailedJobsSection =()=>{
                <div className='similar-jobs-cont'>
                <h4 className="descrip-heading">Similar Jobs</h4>
                <ul className='similar-jobs-ul-cont'>
-                   {allValues.similarJobsDetails.map( each=><SimilarJobs key={each.id} detailOfSimilarJobs={each}/>)}
+                   {allValues.similarJobsDetails.map( (each, index)=> <SimilarJobs key={index} detailOfSimilarJobs={each}/>)}
                </ul>
                </div>
 

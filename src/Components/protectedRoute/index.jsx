@@ -2,6 +2,8 @@
 import { useEffect } from 'react';
 import Cookies from 'js-cookie'
 import { useNavigate } from 'react-router-dom';
+
+
 const ProtectedRoute = (props)=>{
 
      const {Component} = props
@@ -16,6 +18,7 @@ const ProtectedRoute = (props)=>{
      },[])
 
      return(
+
           <Component/>
                
      )

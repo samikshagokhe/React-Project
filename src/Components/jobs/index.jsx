@@ -25,6 +25,8 @@ const Jobs =()=>{
           const getJobsData =async ()=>{
                // console.log(allValues.empType);
 
+          const {empType,minPackage,userSearchIn} = allValues;     
+
                const api = `https://apis.ccbp.in/jobs?employment_type=${allValues.empType}&minimum_package=${allValues.minPackage}&search=${allValues.userSearchIn}`;
 
                const option = {

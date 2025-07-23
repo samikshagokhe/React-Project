@@ -20,6 +20,8 @@ const DisplayAllJobs = (props)=>{
      const {jobsItem} = props;
      // console.log(jobsItem);
 
+     const {id,title,rating,company_logo_url,location,job_description,employment_type,package_per_annum} = jobsItem;
+
 
      return(
          <>
