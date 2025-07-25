@@ -6,6 +6,7 @@ import {Route, Routes} from "react-router-dom";
 import ProtectedRoute from './Components/protectedRoute';
 import DetailedJobsSection from './Components/detailedJobsSection';
 import './App.css';
+
 const App = ()=>(
   <Routes>
 
