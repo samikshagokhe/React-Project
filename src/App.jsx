@@ -1,9 +1,9 @@
-import Home from './components/home';
+import Home from './Components/home';
 import Login from './Components/login';
-import Jobs from './components/jobs';
-import NotFound from './components/notFound';
+import Jobs from './Components/jobs';
+import NotFound from './Components/notFound';
 import {Route, Routes} from "react-router-dom";
-import ProtectedRoute from './components/protectedRoute';
+import ProtectedRoute from './Components/protectedRoute';
 import DetailedJobsSection from './Components/detailedJobsSection';
 import './App.css';
 const App = ()=>(
